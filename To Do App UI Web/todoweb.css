@@ -1,6 +1,6 @@
 /* ################# CSS CODE: TASK LISTS ###################### */
 body{
-    background-color: #fffbf5;
+    background-color: #ffffff;
 }
 .main-container{
     height: 80vh;
@@ -8,7 +8,7 @@ body{
     margin-top: 80px;
     margin-left: 150px;
     background-color: white;
-    border: 2px solid rgb(202, 202, 202);
+    /* border: 2px solid rgb(202, 202, 202); */
 }
 .container1{
     display: flex;
@@ -105,7 +105,7 @@ body{
     margin-top: 50px;
     margin-left: 230px;
     background-color: white;
-    border: 2px solid #cacaca
+    /* border: 2px solid #cacaca */
 }
 .line3{
     border-bottom:solid 2px #8f8f8f ;
