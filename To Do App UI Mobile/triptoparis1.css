@@ -1,0 +1,156 @@
+.cardcontianer3 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+  .trip {
+    width: 40%;
+    height: 5vh;
+  }
+  .boxcontainer {
+    padding-left: 300px;
+    display: flex;
+    flex-direction: row;
+  }
+  #tripheading {
+    font-size: 64px;
+    font-weight: 900;
+  }
+  .hr1 {
+    width: 18%;
+    padding-top: 90px;
+    padding-right: 20px;
+  }
+  .hr2 {
+    padding-top: 90px;
+    width: 18%;
+  }
+  .upper-container4 {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    padding-top: 65px;
+    left: 46%;
+    opacity: 0.6;
+  }
+  #arrow1 {
+    display: none;
+  }
+  #back {
+    position: absolute;
+    font-weight: lighter;
+    width: 86%;
+    font-size: 2rem;
+    top: 60px;
+    right: 0;
+    padding-top: 10px;
+  }
+  .card4 {
+    border: 1.5px solid rgb(192, 61, 83);
+    margin-top: 170px;
+    position: relative;
+    height: 70vh;
+    width: 32%;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px gray;
+  }
+  .div4 {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 35px;
+    width: 65%;
+    text-align: left;
+    height: 20%;
+  
+    color: red;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    opacity: 0.8;
+  }
+  .div5 {
+    position: absolute;
+    top: 110px;
+    right: 15px;
+    font-size: 25px;
+    width: 60%;
+    text-align: left;
+    font-weight: bold;
+    /* height: 25%; */
+    color: red;
+    text-decoration: line-through;
+  }
+  .div6 {
+    position: absolute;
+    top: 190px;
+    right: 0;
+    font-size: 25px;
+    width: 70%;
+    text-align: left;
+    height: 15%;
+    opacity: 0.8;
+  }
+  #check {
+    width: 20px;
+    height: 20px;
+  }
+  #circle1 {
+    margin-top: 87%;
+    margin-left: 82%;
+    opacity: 0.7;
+  }
+  @media (max-width: 600px) {
+    .cardcontianer3 {
+      width: 100%;
+    }
+    .boxcontainer {
+      padding-left: 10px;
+      margin-top: 20px;
+    }
+    .trip {
+      width: 100%;
+    }
+    #tripheading {
+      padding-left: 6%;
+      text-align: left;
+      font-size: 42px;
+      font-weight: 600;
+      width: 100%;
+    }
+    .hr1 {
+      display: none;
+    }
+    .hr2 {
+      display: none;
+    }
+    .upper-container4 {
+      display: none;
+    }
+    #arrow1 {
+      display: flex;
+      width: auto;
+      padding-top: 14%;
+      padding-left: 2%;
+      opacity: 0.7;
+    }
+    .card4 {
+      margin-top: 20%;
+      width: 80%;
+      height: 67vh;
+    }
+    .div4 {
+      width: 76%;
+    }
+    .div5 {
+      width: 74%;
+    }
+    .div6 {
+      width: 90%;
+      height: auto;
+    }
+    #circle1 {
+      margin-top: 435px;
+      margin-left: 75%;
+    }
+  }
