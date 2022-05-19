@@ -1,94 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./todomobile1.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="main">
-      <div class="upper-container">
-        <div class="upper-container1">
-          <span id="tasks">Tasks</span>
-          <span id="lists">Lists</span>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App UI Mobile</title>
+    <link rel="stylesheet" href="./todomobile.css">
+    <link rel="icon" href="./icons8-check-48.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container2">
+        <div class="containers">
+            <div class="con1">
+                <div><span class="task">Tasks</span>  <span class="list">Lists</span></div>
+                <div><a href="./addlist.html"><img class="plus" src="./icons8-add-50.png" alt=""></a></div>
+            </div><br>
+            <div class="con2">
+                <a href="./triptoparis.html"><div class="card">Trip to Paris</div></a>
+                <a href="#"><div class="card">My Todo List 2</div></a>
+                <a href="#"><div class="card">My Todo List 3</div></a>
+                <a href="#"><div class="card">My Todo List 4</div></a>
+                <a href="#"><div class="card">My Todo List 5</div></a>
+            </div>
         </div>
-
-        <div class="upper-container2">
-          <div id="circle">
-            <a href="./addlist.html">
-              <i
-              class="fa fa-plus-circle"
-              style="font-size: 42px; color: red"
-            ></i>
-            </a>
-          </div>
-          <div id="addlist">Add List</div>
-        </div>
-      </div>
-      <div class="cardcontianer">
-        <div class="card">
-          <div class="div1">
-            <a href="./triptoparis.html">
-              <p>Trip to Paris</p>
-            </a>
-          </div>
-          <div class="div2">
-            <p>Completed Task</p>
-          </div>
-          <div class="div3">
-            <form>
-              <input type="checkbox" id="check" name="todoo" />
-              <label for="todo">Pending Task</label>
-            </form>
-          </div>
-        </div>
-        <div class="card">
-          <div class="div1">
-            <p>My Todo List 2</p>
-          </div>
-          <div class="div2">
-            <p>Completed Task</p>
-          </div>
-          <div class="div3">
-            <form>
-              <input type="checkbox" id="check" name="todoo" />
-              <label for="todo">Pending Task</label>
-            </form>
-          </div>
-        </div>
-        <div class="card">
-          <div class="div1">
-            <p>My Todo List 3</p>
-          </div>
-          <div class="div2">
-            <p>Completed Task</p>
-          </div>
-          <div class="div3">
-            <form>
-              <input type="checkbox" id="check" name="todoo" />
-              <label for="todo">Pending Task</label>
-            </form>
-          </div>
-        </div>
-        <div class="card1">
-          <div class="div1">
-            <p>My Todo List 4</p>
-          </div>
-        </div>
-        <div class="card1">
-          <div class="div1">
-            <p>My Todo List 5</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>

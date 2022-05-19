@@ -1,0 +1,53 @@
+.addlist-container{
+    margin: 0;
+    position:absolute;
+    top: 270px;
+    /* left: 300px; */
+    left: 550px;
+    z-index: 1;
+}
+.blur{
+    filter: blur(7px);
+}
+.addlist{
+    border: 3px solid #ff8585;
+    border-radius: 10px;
+    height: 24vh;
+    width: 200%;
+    text-align: center;
+    padding-top: 10px;
+    color: #fa5c5c;
+    font-family: arial;
+    font-size: large;
+    background-color: white;
+}
+.text{
+    height: 15%;
+    width: 70%;
+    border: 2px solid #ff8585;
+    border-radius: 5px;
+}
+.button{
+    height: 15%;
+    width: 20%;
+    background-color: #fa5c5c;
+    color: white;
+    font-size: large;
+    border: solid 2px #fa5c5c;
+    border-radius:20px;
+    cursor:pointer;
+}
+label{
+    cursor: pointer;
+}
+@media(max-width:600px){
+    .addlist-container{
+        top: 200px;
+        left:45px;
+    }
+    
+    .addlist{
+        width: 150%;
+    }
+}
+    

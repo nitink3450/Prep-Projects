@@ -1,0 +1,364 @@
+/* ################# CSS CODE: TASK LISTS ###################### */
+body{
+    background-color: #ffffff;
+}
+.main-container{
+    height: 80vh;
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 150px;
+    background-color: white;
+}
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.task{
+    font-size:70px;
+    font-family:Arial;
+    font-weight: bold;
+}
+.list{
+    font-size: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-weight:lighter;
+}
+.list1{
+    font-size:30px;
+    font-family:sans-serif;
+    color: gray;
+    position: relative;
+    left: 12px;
+}
+.right{
+    cursor: pointer;
+}
+.underline{
+    text-decoration: none;
+    color:#ff8585;
+}
+.plus{
+    position: relative;
+    top: 15px;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    height: 47vh;
+    width: 18%;
+    border: 3px solid #ff8585;
+    border-radius: 15px;
+    margin: 25px;
+    font-size:26px;
+    font-family:sans-serif;
+    font-stretch:condensed;
+    box-sizing: border-box;
+    padding-top: 40px;
+    text-align: center;
+    color: #ff8585;
+    cursor: pointer;
+}
+.todo3{
+    display: none;
+}
+/* ################# CSS CODE: TRIP TO PARIS ###################### */
+.line{
+    border-bottom:solid 2px #8f8f8f ;
+    margin-right:0px;
+    margin-left: 35px;
+    padding-top: 15px;
+    /* width: 84%; */
+}
+.strike{
+    color: red;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+.check{
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+.pending{
+    color: black;
+    font-size: 20px;
+    float: left;
+    position: relative;
+    top: 1px;
+    left: 6px;
+}
+.heading{
+    font-size: 70px;
+    font-family:Arial;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.trip-container{
+    height: 85vh;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 230px;
+    background-color: white;
+ 
+}
+.line3{
+    border-bottom:solid 2px #8f8f8f ;
+    margin-left: 100px;
+    margin-right: 200px;
+    width: 20%;
+    position: relative;
+    top: 70px;
+}
+.line4{
+    border-bottom:solid 2px #8f8f8f ;
+    margin-left: 35px;
+    margin-right: 200px;
+    position: relative;
+    top: -43px;
+    left:720px;
+    width: 20%;
+
+}
+.back1{
+    font-size:30px;
+    font-family:sans-serif;
+    color: gray;
+    text-align: center;
+    cursor: pointer;
+}
+.back{
+    position: relative;
+    top: -20px;
+    left: 15px;
+}
+.trip-container2{
+    display: flex;
+    justify-content: center;
+}
+.card1{
+    width: 30%;
+}
+.pad{
+    position: relative;
+    left: 60px;
+    top: 10px;
+}
+.plus1{
+    position: relative;
+    left: 130px;
+    top: 13px;
+    height: 13%;
+    width: 13%;
+}
+
+/* ################# CSS CODE: ADD NEW LIST ###################### */
+.addlist-container{
+    margin: 0;
+    position:absolute;
+    top: 270px;
+    /* left: 300px; */
+    left: 550px;
+    z-index: 1;
+}
+.blur{
+    filter: blur(7px);
+}
+.addlist{
+    border: 3px solid #ff8585;
+    border-radius: 10px;
+    height: 24vh;
+    width: 200%;
+    text-align: center;
+    padding-top: 10px;
+    color: #fa5c5c;
+    font-family: arial;
+    font-size: large;
+    background-color: white;
+}
+.text{
+    height: 15%;
+    width: 70%;
+    border: 2px solid #ff8585;
+    border-radius: 5px;
+}
+.button{
+    height: 15%;
+    width: 20%;
+    background-color: #fa5c5c;
+    color: white;
+    font-size: large;
+    border: solid 2px #fa5c5c;
+    border-radius:20px;
+    cursor:pointer;
+}
+label{
+    cursor: pointer;
+}
+
+/* ################# CSS CODE: ADD NEW ITEM ###################### */
+.item{
+    margin: 0;
+    position:absolute;
+    top: 270px;
+    left: 590px;
+    z-index: 1;
+}
+@media(max-width:600px){
+    .line{
+        display: none;
+    }
+    .list1{
+        display: none;
+    }
+    .strike{
+        display: none;
+    }
+    .check{
+        display: none;
+    }
+    .pending{
+        display: none;
+    }
+    .cards{
+        height: 60px;
+        width: 100%;
+        border: solid 1px #ffc3c3;
+        display:flex;
+        border-radius: 10px;
+        padding-left: 15px;
+        align-items: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: 5px 5px 3px #cdcdcd;
+        font-size: large;
+        padding-top: 0px;
+    }
+    .cards:hover{
+        border: solid 1px #ffffff;
+        background-color: black;
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        height: 65px;
+        width: 105%;
+    }
+    .underline:hover{
+        color:white;
+    }
+    .task{
+        font-size:45px;
+    }
+    .list{
+        font-size:45px;
+    }
+    .plus{
+        top: 18px;
+        left: 15px;
+        width: 10vw;
+    }
+    .container2{
+        flex-direction: column;
+    }
+    .todo3{
+        display:flex;
+        height: 60px;
+        width: 95%;
+        border: solid 1px #ffc3c3;
+        display:flex;
+        border-radius: 10px;
+        padding-left: 15px;
+        align-items: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: 5px 5px 3px #cdcdcd;
+        font-size: large;
+        padding-top: 0px;
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+    .todo3:hover{
+        border: solid 1px #ffffff;
+        background-color: black;
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        height: 65px;
+        width: 100%;
+    }
+    .line3{
+        display: none;
+    }
+    .line4{
+        display: none;
+    }
+    .heading{
+        font-size: 50px;
+        margin-top: 0px;
+    
+    }
+    .trip-container{
+        height:100%;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        background-color: white;
+     
+    }
+    .back1{
+        font-size:20px;
+        font-family:sans-serif;
+        color: gray;
+        /* text-align: center; */
+        cursor: pointer;
+    }
+    .back{
+        display: none;
+    }
+    .trip-container2{
+        display: flex;
+        justify-content:;
+    }
+    .card1{
+        width: 50vw;
+        height: 50vh;
+    }
+    .pad5{
+        position: relative;
+        left: 60px;
+        top: 10px;
+    }
+    .plus1{
+        position: relative;
+        left:10px;
+        top: 1px;
+        height: 100%;
+        width: 100%;
+    }
+    .line5{
+        border-bottom:solid 2px #8f8f8f ;
+        margin-right:0px;
+        margin-left: 35px;
+        padding-top: 15px;
+        /* width: 84%; */
+    }
+    .strike5{
+        color: red;
+        text-decoration: line-through;
+        margin-left: 20px;
+    }
+    .check5{
+        height: 20px;
+        width: 20px;
+        float: left;
+    }
+    .main-container{
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    
+}

@@ -1,0 +1,184 @@
+/* ######################## CSS:TASK LIST ######################## */
+body{
+    margin:0;
+}
+.containers{
+    height:640px;
+    width:360px;
+    border:solid 2px rgb(222, 222, 222);
+    box-sizing: border-box; gray
+}
+.con1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.plus{
+   height: 40px;
+   width: 40px;
+   position: relative;
+   top: 5px;
+}
+.task{
+    font-size:50px;
+    font-family:Arial;
+    font-weight: bold;
+    display: inline;
+}
+.list{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-weight:lighter;
+}
+.card{
+    height: 60px;
+    width: 290px;
+    border: solid 1px #ffc3c3;
+    display:flex;
+    margin: 30px 25px 25px 25px;
+    border-radius: 10px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 3px #cdcdcd;
+    font-size: large;
+    
+}
+a{
+    text-decoration: none;
+    color: #785454;
+    cursor: pointer;
+}
+.card:hover{
+    height: 65px;
+    width: 300px;
+    transition: 0.2s all;
+    font-size: x-large;
+    font-weight: bold;
+    margin:25px 20px 20px 20px;
+    color: #ffffff;
+    border:1px solid rgb(255, 255, 255);
+    background-color: #000000;
+}
+.plus:hover{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 5px;
+ }
+ /* ######################## CSS:TRIP TO PARIS ######################## */
+.task1{
+    font-size: 40px;
+    margin-right: 60px;
+}
+.line{
+    border-bottom:solid 2px #8f8f8f ;
+    margin-right:0px;
+    margin-left: 35px;
+    padding-top: 15px;
+}
+.strike{
+    color: red;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+.check{
+    height: 20px;
+    width: 20px;
+
+}
+.pending{
+    color: black;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.cards{
+    height: 400px;
+    width: 250px;
+    border: 2px solid #ff8585;
+    border-radius: 15px;
+    margin: 50px;
+    font-size:26px;
+    font-family:sans-serif;
+    font-stretch:condensed;
+    box-sizing: border-box;
+    padding-top: 40px;
+    text-align: center;
+    color: #ff8585;
+    cursor: pointer;
+    box-shadow: 8px 8px 3px #cdcdcd;
+}
+.cards:hover{
+    height: 420px;
+    width: 270px;
+    border: 1px solid #ff0000;
+    transition: 0.2s all;
+}
+.a1:hover{
+    font-size: xx-large;
+    font-weight: bold;
+    transition: 0.2s all;
+}
+.plus1{
+    position: fixed;
+    left: 255px;
+    top: 500px;
+    height: 40px;
+    width: 40px;
+}
+.plus1:hover{
+    height: 55px;
+    width: 55px;
+}
+ /* ######################## CSS:TRIP TO PARIS ######################## */
+ .addlist-container{
+    margin: 0;
+    position:absolute;
+    top: 220px;
+    left: 30px;
+    z-index: 1;
+}
+.blur{
+    filter: blur(7px);
+}
+.addlist{
+    border: 2px solid #ff8585;
+    border-radius: 10px;
+    height: 160px;
+    width: 290px;
+    text-align: center;
+    padding-top: 10px;
+    color: #fa5c5c;
+    font-family: arial;
+    font-size: large;
+    background-color: white;
+    box-shadow: 8px 8px 3px #cdcdcd;
+}
+.text{
+    height: 15%;
+    width: 70%;
+    border: 2px solid #ff8585;
+    border-radius: 5px;
+}
+.button{
+    height: 17%;
+    width: 30%;
+    background-color: #fa5c5c;
+    color: white;
+    font-size: large;
+    border: solid 2px #fa5c5c;
+    border-radius:20px;
+    cursor:pointer;
+}
+label{
+    cursor: pointer;
+}
+.addlist:hover{
+    border: 1px solid #ff8585;
+    height: 170px;
+    width: 300px;
+}
+    

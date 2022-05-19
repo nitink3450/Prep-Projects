@@ -1,0 +1,17 @@
+.item{
+    margin: 0;
+    position:absolute;
+    top: 270px;
+    left: 590px;
+    z-index: 1;
+}
+@media(max-width:600px){
+    .addlist-container{
+        top: 200px;
+        left:45px;
+    }
+    
+    .addlist{
+        width: 150%;
+    }
+}

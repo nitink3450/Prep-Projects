@@ -1,83 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./additem1.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="notshow">
-
-    <div class="cardcontianer3">
-      <div class="boxcontainer">
-        <div class="hr1"><hr /></div>
-        <div id="arrow1">
-          <i
-            class="fa fa-arrow-circle-left"
-            style="font-size: 48px; color: red "
-          ></i>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP UI WEB</title>
+    <link rel="stylesheet" href="./todoweb.css">
+    <link rel="stylesheet" href="./additem.css">
+    <link rel="icon" href="./icons8-check-48.png" type="image/x-icon">
+</head>
+<body>
+    <div class="addlist-container item">
+        <div class="addlist"><br>
+            <label for="list">Add New Item</label><br><br>
+            <input class="text" id="list" type="text"><br><br>
+             <a href="./triptoparis.html"><input class="button" type="button" value="ADD"></a>
         </div>
-        <div class="trip">
-          <p id="tripheading">
-              Trip To Paris
-          </p>
-        </div>
-        <div class="hr2">
-          <hr />
-        </div>
-      </div>
-    </Center>
-      <div class="upper-container4">
-        <div id="arrow">
-          <i
-            class="fa fa-arrow-circle-left"
-            style="font-size: 48px; color: red "
-          ></i>
-        </div>
-        <div id="back">Back</div>
-      </div>
-<center>
-      <div class="card4">
-        <div class="div4">
-          <p>Trip to Paris</p>
-        </div>
-        <div class="div5">
-          <p>Completed Task</p>
-        </div>
-        <div class="div6">
-          <form>
-            <input type="checkbox" id="check" name="todoo" />
-            <label for="todo">Pending Task</label>
-          </form>
-        </div>
-        <div id="circle1">
-          <i class="fa fa-plus-circle" style="font-size: 48px; color: red"></i>
-        </div>
-      </div>
-</center>
     </div>
-  </div>
-  <div class="pop-up">
-    <center>
-      <p id="add-new">Add New Todo</p>
-    </center>
-    <center>
-      <textarea class="pop-upbar"></textarea>
-    </center>
-    <center>
-      <button class="pop-upbutton" id="demo" type="button" ><a href="https://www.interviewbit.com/" target="_blank">
-        ADD
-      </a></button>
-    </center>
-  </div>
- 
-  </body>
-  
+    <div class="trip-container blur">
+        <div class="line3"></div><div class="heading">Trip to Paris</div><div class="line4"></div><br><br>
+        <div class="back1"><img src="./icons8-back-arrow-64.png" alt=""><span class="back">Back</span></div>
+        <div class="trip-container2">
+             <div class="cards card1">Trip to Paris <br>
+             <div class="line"></div> <br>
+             <div class="strike">Completed Task</div><br>
+             <input class="check pad" type="checkbox" name="task" id="task">
+             <label class="pending pad" for="task">Pending Task</label><br><br><br><br>
+             <img class="plus1" src="./icons8-add-50.png" alt="">
+             </div>
+        </div>
+     </div>
+</body>
 </html>
