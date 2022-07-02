@@ -1,0 +1,88 @@
+#main-container{
+    filter: blur(0px);
+    background-color: black;
+    min-height: 100vh;
+}
+/* Header task list and add list  */
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    background-color: black;
+}
+.task{
+    font-size:70px;
+    font-family:Arial;
+    font-weight: bold;
+    color: white;
+}
+.list{
+    font-size: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-weight:lighter;
+}
+.list1{
+    font-size:30px;
+    font-family:sans-serif;
+    color: gray;
+    position: relative;
+    left: 12px;
+}
+#plus{
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+} 
+
+/* add new list */
+
+.button{
+    height: 15%;
+    width: 20%;
+    background-color: #fa5c5c;
+    color: white;
+    font-size: large;
+    border: solid 2px #fa5c5c;
+    border-radius:20px;
+    cursor:pointer;
+}
+label{
+    cursor: pointer;
+}
+.text{
+    height: 15%;
+    width: 70%;
+    border: 2px solid #ff8585;
+    border-radius: 5px;
+}
+.blur{
+    filter: blur(7px);
+}
+#container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.addlist{
+    border: 3px solid #ff8585;
+    border-radius: 10px;
+    height: 24vh;
+    width: 23%;
+    text-align: center;
+    padding-top: 10px;
+    color: #fa5c5c;
+    font-family: arial;
+    font-size: large;
+    background-color: white;
+    position:absolute;
+    top: 270px;
+}
+
+/* cards div appended */
+#cards {
+    display: flex;
+    justify-content: space-between;
+
+}
