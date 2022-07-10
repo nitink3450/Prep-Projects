@@ -1,0 +1,347 @@
+html,body{
+    background-image: "https://thumbs.dreamstime.com/b/paris-eiffel-tower-river-seine-sunset-france-one-most-iconic-landmarks-107376344.jpg";
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .w {
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-left: 10px;
+  }
+  
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .blur {
+    filter: blur(25px);
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: yellow;
+    margin-top: 20px;
+  }
+  
+  .task-header h1 {
+    font-size: 60px;
+    color: red;
+    font-family: 'Times new Roman';
+  }
+  
+  
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-top: 1 0px;
+  }
+  
+  .box {
+    width: 240px;
+    min-height: 370px;
+    box-shadow: 0 0 3px rgb(169, 231, 23);
+    position: relative;
+    background-color:yellow
+    border-radius: 10px;
+  }
+  
+  .sbox {
+    width: 240px;
+    min-height: 370px;
+    box-shadow: 0 0 3px rgb(231, 23, 23);
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 70px;
+  }
+  
+  .selected {
+    margin-top: 50px;
+  }
+  
+  #b-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .heading {
+    color: black;
+    font-size: 30px;
+  }
+  
+  .page-2-btn {
+    width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box-heading {
+    text-align: center;
+    font-weight: lighter;
+    color: rgb(209, 37, 37);
+    text-transform: capitalize;
+  }
+  
+  .sbox .box-heading {
+    padding-top: 10px;
+    text-transform: capitalize;
+  
+  }
+  
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .task {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .task-done-btn {
+    background-color: rgba(243, 12, 12, 0.986);
+    border-radius: 10px;
+    padding: 5px;
+    color: greenyellow;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  .task-done {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: red;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .lists p {
+    text-align: center;
+    font-size: 22px;
+    color: yellow;
+  }
+  
+  #del_list {
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+  }
+  
+  #add_list {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+  }
+  
+  #s_del_list {
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+  }
+  
+  #s_add_list {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+  }
+  
+  #p-btn {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+  }
+  
+  #add-task-text {
+    font-size: 30px;
+    color: brown;
+    font-family: 'cursive';
+  }
+  
+  .fa-plus-circle {
+    color: orangered;
+    font-size: 34px;
+  }
+  
+  .fa-trash {
+    background-color: red;
+    color: yellowgreen;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  @keyframes popup {
+    from {
+      bottom: 0;
+      left: 37%;
+      opacity: 0.1;
+    }
+  
+    to {
+      bottom: 40%;
+      left: 37%;
+      opacity: 1;
+    }
+  }
+  
+  
+  .white {
+    color: white;
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .fa-chevron-circle-left {
+    color: black;
+  }
+  
+  #no-item-div {
+    color: black;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: 'cursive';
+  }
+  
+  
+  .m-box {
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    height: 200px;
+    width: 420px;
+    border-style: solid;
+    position: absolute;
+    border-color: orangered;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    color:rgb(241, 116, 116);
+    z-index: 1000;
+    bottom: 0;
+    left: 37%;
+  }
+  
+  .m-box button {
+    text-transform: uppercase;
+    margin-top: 20px;
+    height: 40px;
+    width: 75px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .modal-btns {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .m-box input {
+    width: 60%;
+    text-align: center;
+    display: block;
+    padding: 10px 30px;
+    border-color: rgb(241, 116, 116);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  
+  
+  .add-item-modal {
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    height: 200px;
+    width: 420px;
+    border-style: solid;
+    position: absolute;
+    border-color:orangered;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    color: rgb(241, 116, 116);
+    z-index: 1000;
+  }
+  
+  .add-item-modal button {
+    text-transform: uppercase;
+    margin-top: 20px;
+    height: 40px;
+    width: 75px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: orangered;
+    color: white;
+  }
+  
+  .btn {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-item-modal input {
+    width: 60%;
+    text-align: center;
+    display: block;
+    padding: 10px 30px;
+    border-color: orangered;
+    border-radius: 5px;
+    outline: none;
+  }
+  #l1
+  {
+    color: orangered;
+   font-weight: lighter;
+   font-size: 30px;
+    font-family: 'Times New Roman';
+  }
+  #l2
+  {
+    color: orangered;
+    font-weight: lighter;
+    font-size: 30px;
+     font-family: 'Times New Roman';
+  }
+  
+  
+  .hidden {
+    display: none;
+  }

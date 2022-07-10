@@ -27,12 +27,16 @@
     font-family:sans-serif;
     color: gray;
     position: relative;
-    left: 12px;
+    left: 10px;
+    top: 10px;
 }
 #plus{
     position: relative;
     top: 15px;
     cursor: pointer;
+    color:red;
+    font-size: 40px;
+
 } 
 
 /* add new list */
@@ -59,11 +63,12 @@ label{
 .blur{
     filter: blur(7px);
 }
-#container2{
+.addnew{
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+    z-index: 1;
 }
 .addlist{
     border: 3px solid #ff8585;
@@ -85,6 +90,9 @@ label{
     display: flex;
     justify-content: space-between;
     margin: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center ; */
 }
 /* new card */
 #newCardDiv{
@@ -93,44 +101,100 @@ label{
     border: 3px solid #ff8585;
     border-radius: 15px;
     height: 380px;
-    width: 240px;
+    width: 255px;
+    margin:0px 0px 80px 0px;
+    display: block;
+    align-items: flex-start;
     
 
 }
 #inputTextHeadHeading{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     border-bottom: 2px solid gray;
-    padding: 0px 0px 20px 0px;
-    height: 50px;
+    padding: 20px 0px 10px 0px;
+    height:50px;
     width: 100%;
     color: #fa5c5c;
     font-size: xx-large;
     flex-flow: wrap;
     overflow: hidden;
-    font-family: cursive;
-
+    font-family:cursive;
+    /* border: 2px solid green; */
+    margin-top: 0px;
 }
-#itemsdiv{
+.itemsdiv{
     display: flex;
-    justify-content: center;
-    border: 2px solid green;
-    height:25vh;
-    font-family: sans-serif;
-    font-size: large;
+    justify-content: flex-start;
+    height:26vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    flex-direction: column;
 }
 
 /* delete and add card img */
-#deleteImg{
+#delImg{
     height: 43px;
-    position: absolute;
-    top:570px;
-    left: 230px;
+    position:relative;
+    top:5px;
+    left: 150px;
+    font-size:39px;
+    color:red;
 }
-/* #addImg{
+#addImg{
     height: 44px;
-    position: absolute;
-    top:570px;
-    left: 285px;
-} */
+    position:relative;
+    top:5px;
+    left: 160px;
+    font-size:40px;
+    color: red;
+}
+/* empty message */
+#empty-list{
+    position: relative;
+    top: -10vh;
+    margin-left: 15vw;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+}
+
+/*add items  */
+.addlist-container{
+    margin: 0;
+    position:absolute;
+    top: 270px;
+    /* left: 300px; */
+    left: 550px;
+    z-index: 1;
+}
+.item{
+    margin: 0;
+    position:absolute;
+    top: 270px;
+    /* left: 300px; */
+    left: 590px;
+    z-index: 1;
+}
+
+li{
+    color: black;
+    font-size: large;
+    font-size: x-large;
+}
+/* .hidden {
+    display: none;
+  } */
+#no-item-div {
+color:white;
+text-transform: capitalize;
+font-size: 35px;
+font-family: 'cursive';
+margin-left: 200px;
+display: none;
+}

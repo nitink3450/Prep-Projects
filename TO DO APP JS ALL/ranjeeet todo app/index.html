@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App-JS</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+  
+    <div class="m-box hidden">           
+      <h2 id="l1">Add New List</h2>
+      <input type="text"  id="name">
+      <div class="modal-btns">
+        <button class="add">Add</button>
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="task-header">
+        <h1>Task <span>List</span></h1>
+        <p onclick="addBoxes()">
+          <i class="fas fa-plus-circle fa-2x"></i>
+          <span id="add-task-text">Add List</span>
+        </p>
+      </div>
+      <div id="no-item-div">No Items in to do list</div>
+      <div class="flex-container"></div>
+    </div>
+    <div class="selected d-none"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -104,7 +104,4 @@ let nightUp = parseInt(document.getElementById("night").value);
   timing[1].innerText ="Lunch Time:" + " " + lunch.options[lunch.selectedIndex].text;
   timing[2].innerText ="Nap Time:" + " " + nap.options[nap.selectedIndex].text;
   timing[3].innerText ="Night Time:" + " " + night.options[night.selectedIndex].text;
-
-    
-
  }
