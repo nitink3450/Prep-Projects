@@ -134,6 +134,7 @@ label{
     color: black;
     text-align: center;
     flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 
 /* delete and add card img */
@@ -197,4 +198,6 @@ font-size: 35px;
 font-family: 'cursive';
 margin-left: 200px;
 display: none;
+position: absolute;
+top: 150px;
 }

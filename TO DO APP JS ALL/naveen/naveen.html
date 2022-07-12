@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./naveen.css" />
+  </head>
+  <body>
+    <div class="notshow">
+      <div class="upper-container">
+        <div class="upper-container1">
+          <span id="tasks">Tasks</span>
+          <span id="lists">Lists</span>
+        </div>
+        <div class="upper-container11">
+          <span id="arrow">
+            <i
+              class="fa fa-arrow-circle-left Displayall"
+              style="font-size: 48px; color: red"
+              onclick="displayAll()"
+            ></i>
+          </span>
+          <span id="lists1">Back</span>
+        </div>
+        <div class="upper-container2">
+          <div id="circle">
+            <i
+              class="fa fa-plus-circle"
+              style="font-size: 42px; color: red"
+            ></i>
+          </div>
+          <div id="addlist">Add List</div>
+        </div>
+      </div>
+      <div id="Card_heading_separately">Trip To Paris</div>
+
+      <div style="display: none" class="innerButton">
+        <button value="" onclick="completedTask(this)">done</button>
+      </div>
+
+      <div id="empty-container">No Items in Todo list</div>
+      <div class="middle_container card_container" id="outer-container">
+        <div class="card">
+          <div class="innercontainer">
+            <option
+              id="card-heading-text"
+              class="card-heading"
+              onclick="headerFunction(this.value)"
+            >
+              Trip to Paris
+            </option>
+            <br />
+            <div class="list-item"></div>
+            <div class="buttonContainer1">
+              <button class="material-icons addButton" id="addbutton">
+                add
+              </button>
+              <button class="material-icons deleteButton" id="delete">
+                delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-up">
+      <p id="add-new">Add New List</p>
+      <input type="text" class="pop-upbar" id="input" />
+      <div class="buttonContainer">
+        <button class="pop-upbutton" id="Add_card" type="button">ADD</button>
+        <button class="pop-upbutton" id="Cancel_List" type="button">
+          Cancel
+        </button>
+      </div>
+    </div>
+    <div class="pop-up">
+      <p id="add-new1">Add New Todo</p>
+      <input type="text" class="pop-upbar" id="input2" />
+      <div class="buttonContainer">
+        <button class="pop-upbutton" id="demo11" type="button">ADD</button>
+        <button class="pop-upbutton" id="demo12" type="button">Cancel</button>
+      </div>
+    </div>
+
+    <script src="./naveen.js"></script>
+  </body>
+</html>

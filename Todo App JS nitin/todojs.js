@@ -8,8 +8,15 @@ let addButtonList =document.getElementById('btnadd');//add list add btn
 let inputValue =document.getElementById('list');//add list input value 
 let container3 = document.getElementById('container3');//add new items
 let closeButtonList1 =document.getElementById('btncls1');//add items close btn
-let addButtonList1 =document.getElementById('btnadd1');//add items add btn
+// let addButtonList1 =document.getElementById('btnadd1');//add items add btn
 let inputValue1 =document.getElementById('list1');//add items input value 
+
+
+var currentElement  ;
+const showNewPopup = (e) => {//7
+//    newPopup.style.display = "flex" 
+   currentElement = e//parentnode card is passed in e
+}
 
 //by clicking displaying popup of add new list and background blur-
  plusButton.addEventListener('click',() =>{
@@ -49,7 +56,7 @@ cards.innerHTML += `
                     <div id ='newCardDiv'>
                         <h2 id ='inputTextHeadHeading'>${data.text}</h2>
                         
-                        <div class="itemsdiv" id="li-${data.text}"></div>
+                        <div class="itemsdiv" id="liDiv"></div>
                         <span>
                              <i onClick="delNewItems(this)" id="delImg" class="fa-solid fa-trash"></i>
                              <i onClick="addNewItems(this)" id="addImg" class="fa-solid fa-square-plus"></i>
@@ -58,7 +65,7 @@ cards.innerHTML += `
                                  
                     </div>
  `;
- inputValue.value = '';
+//  inputValue.value = '';
 }
 
 //deleting cards-
@@ -75,16 +82,21 @@ console.log('delNewItems pressed');
     //add list popup-
     container3.style.display='flex';
     console.log('addNewItems pressed');
+    showNewPopup(e.target.parentNode)
  }
 
  //add button of addItem-
-addButtonList1.addEventListener('click',() =>{
+let addButtonList1 = () =>{
     container3.style.display='none';
     mainContainer.style.filter ='blur(0px)';
     console.log('addItemBtn pressed');
-    acceptData1();
-    inputValue1.value = '';
-})
+    
+    let liDivItem =document.getElementById('liDiv')
+    liDivItem.innerText= inputValue1.value
+    currentElement.append(liDivItem)
+    // acceptData1();
+    // inputValue1.value = '';
+}
 
 
 //cls button of addIem-
@@ -95,25 +107,56 @@ closeButtonList1.addEventListener("click",() =>{
 });
 
 
-let data1={};
-let acceptData1 = () =>{
-    // let li=document.createElement('li');
-    // li.innerHTML = inputValue1.value;
-    // let itemDiv = document.getElementById('itemsdiv');//to store the items
-    // itemDiv.appendChild(li);
-    data1['li'] = inputValue1.value ;
-    console.log(data1);
-    createUl();
-}
 
 
-let createUl = () =>{
-    let itemDiv = document.getElementById(`li-${data.text}`);//to store the items
-    itemDiv.innerHTML += `
-       <li>${data1.li}</li>
-    `;
-    console.log(itemDiv)
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let data1={};
+// let acceptData1 = () =>{
+//     // let li=document.createElement('li');
+//     // li.innerHTML = inputValue1.value;
+//     // let itemDiv = document.getElementById('itemsdiv');//to store the items
+//     // itemDiv.appendChild(li);
+//     data1['li'] = inputValue1.value ;
+//     console.log(data1);
+//     createUl();
+// }
+
+
+// let createUl = () =>{
+//     let itemDiv = document.getElementById(`li-${data.text}`);//to store the items
+//     itemDiv.innerHTML += `
+//        <li>${data1.li}</li>
+//     `;
+//     console.log(itemDiv)
+// }
 
 
 
