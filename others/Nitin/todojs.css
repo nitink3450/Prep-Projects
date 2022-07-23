@@ -2,6 +2,7 @@
     filter: blur(0px);
     background-color: black;
     min-height: 100vh;
+    /* display: none; */
 }
 /* Header task list and add list  */
 .container1{
@@ -83,16 +84,18 @@ label{
     background-color: white;
     position:absolute;
     top: 270px;
-}
+    z-index: 3;
 
+}
 /* cards div appended */
 #cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 100px;
     flex-wrap: wrap;
     flex-direction: row;
     /* align-items: center ; */
+    z-index: 0;
 }
 /* new card */
 #newCardDiv{
@@ -105,8 +108,6 @@ label{
     margin:0px 0px 80px 0px;
     display: block;
     align-items: flex-start;
-    
-
 }
 #inputTextHeadHeading{
     display: flex;
@@ -123,6 +124,7 @@ label{
     font-family:cursive;
     /* border: 2px solid green; */
     margin-top: 0px;
+    cursor: pointer;
 }
 .itemsdiv{
     display: flex;
@@ -172,7 +174,7 @@ label{
     top: 270px;
     /* left: 300px; */
     left: 550px;
-    z-index: 1;
+    z-index:1;
 }
 .item{
     margin: 0;
@@ -188,16 +190,58 @@ li{
     font-size: large;
     font-size: x-large;
 }
-/* .hidden {
-    display: none;
-  } */
-#no-item-div {
+#no-item-div,#no-item-div1{
 color:white;
 text-transform: capitalize;
 font-size: 35px;
 font-family: 'cursive';
-margin-left: 200px;
-display: none;
+margin-left: 586px;
+/* display: none; */
 position: absolute;
 top: 150px;
 }
+.done{
+    border-radius: 50%;
+    color: red;
+    font-weight: bold;
+    border: solid 3px gray;
+    background-color: black;
+    box-shadow: 2px 2px 4px black;
+    margin-left: 10px;
+}
+.line-height{
+    line-height:40px;
+    letter-spacing:1px;
+}
+.fa-circle-arrow-left{
+font-size: 40px;
+color: red;
+position: absolute;
+/* top: 100px; */
+}
+#container4{
+    display: none;
+    height: 97vh;
+    width: 100%;
+background-color: black;
+}
+#backtext{
+    font-size: 50px;
+    color: white;
+}
+.newpagediv{
+position: absolute;
+top: 11%;
+left: 46%;
+display: flex;
+justify-content: center;
+align-items:space-between;
+}
+#cardNewPage{
+    position: absolute;
+    top: 35%;
+    left: 41.5%;
+}
+#container3,#container4{
+    z-index: 10;
+} 

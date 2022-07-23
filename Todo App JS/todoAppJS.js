@@ -22,11 +22,11 @@ addList.addEventListener("click", () => {
   addBtn.className = "popup-box-button";
   closeBtn.className = "popup-box-button";
   addBtn.innerText = "Add";
+  closeBtn.innerText = "Close";
   //warning To make sure that user enter list name before pressing add btn-
   const warning=document.createElement("p");
   warning.innerText="Enter List Name To Add!!";
   warning.style.display="none";
-  closeBtn.innerText = "Close";
   //appending all children to one div-
   popupbox.appendChild(popHeading);
   popupbox.appendChild(popInput);
@@ -42,7 +42,7 @@ addList.addEventListener("click", () => {
     else{
       document.getElementById("intro-text").style.display="none";//no items in the list
       //creating card template here-
-      const box = document.createElement("div");
+      const box = document.createElement("div");//box is card
       const boxHeading = document.createElement("span");//heading
       const add = document.createElement("i");
       const deleteBtn = document.createElement("i");
@@ -70,7 +70,7 @@ addList.addEventListener("click", () => {
         container.style.visibility="hidden";
         container3.style.visibility="visible";
         const backBtn=document.getElementById("backbtn");
-        //appendin whole card of conatainer into container 3
+        //appending whole card of conatainer into container 3
         container3.appendChild(box);
         deleteBtn.addEventListener('click',()=>{
           document.querySelector(".container-3").removeChild(box);
@@ -86,9 +86,9 @@ addList.addEventListener("click", () => {
       })
       //after clicking add list(input) btn -
       boxHeading.style.borderBottom = "1px solid black";
-      popup.removeChild(popupbox);
+      popup.removeChild(popupbox);//add list pop up will dissapears
       document.querySelector(".container").classList.remove("blur");//blur will dissapear
-      deleteBtn.addEventListener("click", () => {//deletin the whole card
+      deleteBtn.addEventListener("click", () => {//deleting the whole card
         document.querySelector(".container-2").removeChild(box);
         if(document.querySelector(".container-2").innerText===""){
           document.querySelector("#intro-text").style.display="block";
@@ -118,6 +118,7 @@ addList.addEventListener("click", () => {
         popupbox.appendChild(popInput);
         popupbox.appendChild(addBtn);
         popupbox.appendChild(closeBtn);
+
         addBtn.addEventListener("click", () => {
 
         //if user write items name as input-
@@ -142,6 +143,7 @@ addList.addEventListener("click", () => {
             });
           }
         });
+        //close btn for the first add list popup-
         closeBtn.addEventListener("click", () => {
           popup.removeChild(popupbox);
           document.querySelector(".container").classList.remove("blur");
@@ -149,6 +151,7 @@ addList.addEventListener("click", () => {
       });
     }
   });
+  //close btn for the second add item popup-
   closeBtn.addEventListener("click", () => {
     popup.removeChild(popupbox);
     document.querySelector(".container").classList.remove("blur");

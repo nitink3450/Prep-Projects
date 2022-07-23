@@ -71,3 +71,6 @@ const addCard = () => {
     let inputValue = document.getElementById("head").value ;//2.onclick
     createCard(inputValue)
 }
+
+
+//<div class="itemsdiv" id="liDiv"></div>

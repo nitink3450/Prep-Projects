@@ -4,6 +4,7 @@ const oldPage = document.getElementsByClassName("old-page")[0]
 const newPage = document.getElementsByClassName("new-page")[0]
 const  dropZone = document.getElementsByClassName("flex-container")[0] 
 const newPopup = document.getElementsByClassName("new-popup")[0]
+//5
 var currentElement  ;
 const showNewPopup = (e) => {
    newPopup.style.display = "flex" 
@@ -23,21 +24,21 @@ const addNewItem = () =>{
     currentElement.append(div) 
     newPopup.style.display = "none" 
 }
-
+//4
 const showNewPage = (card) =>{
     oldPage.style.display = "none"
     console.log(card)
     newPage.append(card)
     newPage.style.display = "block"
 }
-// card 
+// card //3
 const createCard = (heading) => {
     var cardElement = document.createElement("div")
     cardElement.className = "card" 
     let h4 = document.createElement("h4")
     h4.innerText = heading 
     h4.addEventListener("click" , (e)=>{
-        showNewPage(e.target.parentNode) 
+        showNewPage(e.target.parentNode) //whole card
     })
     let hr = document.createElement("hr")
     let d = document.createElement("span") 
@@ -59,14 +60,17 @@ const createCard = (heading) => {
     dropZone.append(cardElement) 
     rootPop.style.display = "none" 
 }
+
+//1
 addButton.addEventListener("click" , () => {
     rootPop.style.display = "flex" ;
 })
-
+//6
 const deleteCard = (e) =>{ 
    e.target.parentNode.style.display = "none" 
 }
 
+//2
 const addCard = () => {
     let inputValue = document.getElementById("head").value ;
     createCard(inputValue)
