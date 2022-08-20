@@ -14,7 +14,7 @@ let message1=document.getElementById('no-item-div');
 let conatiner4=document.getElementById('container4');
 let cardNewPage = document.getElementById('cardNewPage');
 let backbtn=document.getElementsByClassName('fa-circle-arrow-left')[0];
-// let message2=document.getElementById('no-item-div1');
+let message2=document.getElementById('no-item-div1');
 
 //by clicking displaying popup of add new list and background blur-
  plusButton.addEventListener('click',() =>{
@@ -22,14 +22,14 @@ let backbtn=document.getElementsByClassName('fa-circle-arrow-left')[0];
     mainContainer.style.filter ='blur(5px)';
     //add list popup-
     container2.style.display='flex';
-    console.log('plusButton pressed');
+    // console.log('plusButton pressed');
  });
 
 //close button of addlist-
 closeButtonList.addEventListener("click",() =>{
     container2.style.display='none';
     mainContainer.style.filter ='blur(0px)';
-    console.log('closeButtonList pressed');
+    // console.log('closeButtonList pressed');
 });
 
 //to hide and show no items message=
@@ -42,18 +42,18 @@ function mess(){
 addButtonList.addEventListener('click',() =>{
     container2.style.display='none';
     mainContainer.style.filter ='blur(0px)';
-    console.log('addButtonList pressed');
+    // console.log('addButtonList pressed');
     (inputValue.value==='')? alert('Enter Title First'):acceptData();
     mess();
     inputValue.value='';
 })
 
 //creating obj to store obj(cards details)-
- let data={};
+ let obj={};
   let acceptData = () =>{
     const NewinputValue = inputValue.value.charAt(0).toUpperCase() + inputValue.value.slice(1);
-    data['text'] = NewinputValue ;
-    console.log(data);
+    obj.text = NewinputValue ;
+    // console.log(data);
     createCard();
   }
 
@@ -61,13 +61,12 @@ addButtonList.addEventListener('click',() =>{
 let createCard = () =>{
 cards.innerHTML += `
                     <div id ='newCardDiv'>
-                        <h2 onClick="openNewPage(this)" id ='inputTextHeadHeading'>${data.text}</h2>
+                        <h2 onClick="openNewPage(this)" id='inputTextHeadHeading'>${obj.text}</h2>
                         
                         <div class="itemsdiv" id="liDiv"></div>
                         <span>
                              <i onClick="delNewItems(this)" id="delImg" class="fa-solid fa-trash"></i>
                              <i onClick="addNewItems(this)" id="addImg" class="fa-solid fa-square-plus"></i>
-
                         </span>
                                  
                     </div>
@@ -76,7 +75,7 @@ cards.innerHTML += `
 //deleting cards-
 let delNewItems = (e) =>{
     e.parentElement.parentElement.remove();
-console.log('delNewItems pressed');
+// console.log('delNewItems pressed');
 mess();
 }
 
@@ -87,9 +86,9 @@ var tasksDiv;
     mainContainer.style.filter ='blur(5px)';
     //add list popup-
     container3.style.display='flex';
-    console.log('addNewItems pressed');
+    // console.log('addNewItems pressed');
     tasksDiv=e.parentElement.previousElementSibling;
-    console.log(tasksDiv);
+    // console.log(tasksDiv);
     conatiner4.style.filter ='blur(5px)';
     
  }
@@ -98,7 +97,7 @@ var tasksDiv;
 let addButtonList1 = () =>{
     container3.style.display='none';
     mainContainer.style.filter ='blur(0px)';
-    console.log('addItemBtn pressed');
+    // console.log('addItemBtn pressed');
     let inputValue1 =document.getElementById('list1').value;
     let childDiv=document.createElement('div');
     let li_elements= document.createElement('li');
@@ -113,18 +112,17 @@ let addButtonList1 = () =>{
         e.target.parentNode.style.textDecoration='line-through';
         li_elements.removeChild(markdone)
     })
-    childDiv.appendChild(li_elements)
+    childDiv.appendChild(li_elements);
     tasksDiv.append(childDiv);
     conatiner4.style.filter ='blur(0px)';
     inputValue1='';
-  
 }
 
 //cls button of addItem-
 closeButtonList1.addEventListener("click",() =>{
     container3.style.display='none';
     mainContainer.style.filter ='blur(0px)';
-    console.log('clsItemBtn pressed');
+    // console.log('clsItemBtn pressed');
 });
 
 let openNewPage=(e)=>{
@@ -141,8 +139,6 @@ let openNewPage=(e)=>{
         // (cards.innerText==='')? message1.style.display='flex':message1.style.display='none';
     })
 }
-
-
 
 
 
