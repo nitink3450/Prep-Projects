@@ -71,7 +71,7 @@ cards.innerHTML += `
                                  
                     </div>
  `;
-}
+} 
 //deleting cards-
 let delNewItems = (e) =>{
     e.parentElement.parentElement.remove();
